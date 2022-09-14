@@ -11,6 +11,7 @@
     <title>Designer portfolio</title>
 
     <script src="https://kit.fontawesome.com/4c204ed390.js" crossorigin="anonymous"></script>
+    <script></script>
 </head>
 <body>
     
@@ -23,9 +24,9 @@
 
             <img src="./Images/Logo.svg" alt="logo" class="header__logo">
             <nav class="nav">
-                <a class="nav__link active" href="#">Home</a>
-                <a class="nav__link" href="#">Work</a>
-                <a class="nav__link" href="#">Contact</a>
+                <a class="nav__link" id="n1" data-scroll="#about" href="#">Home</a>
+                <a class="nav__link" id="n2" data-scroll="#works" href="#">Work</a>
+                <a class="nav__link" id="n3" data-scroll="#contacts" href="#">Contact</a>
             </nav>
 
         </div>
@@ -36,7 +37,7 @@
 
 <!-- #####################____About____##################### -->
 
-<div class="about">
+<div class="about" id="about">
     <div class="container">
 
         <div class="about__info">
@@ -65,7 +66,7 @@
 
 <!-- #####################____Works____##################### -->
 
-<div class="works">
+<div class="works" id="works">
     <div class="container">
 
         <div class="works__photos">
@@ -183,7 +184,7 @@
 <!-- #####################____Contacts____##################### -->
 
 
-<div class="contacts">
+<div class="contacts" id="contacts">
     <div class="container">
 
         <div class="contacts__inner">
@@ -386,6 +387,12 @@
 
     </div> <!--./container-->
 </footer> <!--./footer-->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./app.js"></script>
+
 
 </body>
 </html>
