@@ -1,0 +1,675 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+i {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #202020;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    color: #959595;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+
+
+
+/* ================================== */
+/* ========== Small things ========== */
+/* ================================== */
+
+
+/* Large Photo */
+.about__photo {
+    display: inline-block;
+    height: 400px;
+}
+
+/* Prototype */
+.prototype {
+    margin-bottom: 112px;
+}
+
+.prototype__item {
+    width: fit-content;
+}
+
+.prototype__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+}
+
+.prototype hr {
+    margin: 10px 0;
+    padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid rgba(165, 165, 165, 1);
+}
+
+/* Next Case */
+.case {
+    margin-bottom: 153px;
+}
+
+.case__item {
+    display: flex;
+    justify-content: center;
+}
+
+.case__title {
+    font-weight: 700;
+    font-size: 32px;
+    /* identical to box height, or 169% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+}
+
+.case hr {
+    margin: 10px 0;
+    padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid rgba(196, 196, 196, 1);
+
+}
+
+
+
+/* ================================== */
+/* ================================== */
+/* ================================== */
+
+
+/* Header */
+.header {
+    width: 100%;
+
+    height: 60px;
+    background-color: rgba(50, 50, 50, 0.7);
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo:hover {
+    width: 92px;
+    height: 47px;
+}
+
+/* Nav */
+.nav {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0 30px;
+
+    color: #DEDEDE;
+    text-decoration: none;
+}
+
+.nav__link.active {
+    color: #a3a0a0;
+    border-bottom: 2px solid #a3a0a0;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    color: #a3a0a0;
+    border-bottom: 2px solid #a3a0a0;
+}
+
+/* About */
+.about {
+    margin-top: 130px;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.about__info {
+    display: inline-block;
+    min-width: 50%;
+}
+
+.about__title {
+    max-width: 610px;
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+}
+
+.about__subtitle {
+    max-width: 476px;
+    margin-bottom: 64px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    color: #959595;
+}
+
+.btn--about {
+    margin-bottom: 157px;
+    background-color: rgba(157, 157, 157, 1);
+    border: none;
+
+    font-weight: 100;
+    font-size: 18px;
+
+    color: #FFFFFF;
+
+    padding: 19.5px 101px;
+    cursor: pointer;
+}
+
+.btn--about:hover {
+    background-color: rgb(119, 116, 116);
+}
+
+.featured__work {
+    margin-bottom: 80px;
+}
+
+.about i {
+    margin-right: 16px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Works */
+.works__item {
+    height: fit-content;
+}
+
+.works__item:nth-child(2) {
+    margin-top: 138px;
+}
+
+.works__item:nth-child(3) {
+    margin-top: -120px;
+}
+
+.works__item:nth-child(4) {
+    margin-top: 18px;
+}
+
+.works__photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.works__inner {
+    position: relative;
+}
+
+.works__text {
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    opacity: 0;
+    
+    color: #DEDEDE;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+}
+
+.works__inner:hover .works__img img {
+    opacity: .4;
+}
+
+.works__inner:hover .works__text {
+    opacity: 1;
+}
+
+/* Explorations */
+.exploration {
+    margin-top: 240px;
+}
+
+.exploration__title {
+    margin-bottom: 65px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+}
+
+.exploration__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exploration__item:nth-child(1),
+.exploration__item:nth-child(2),
+.exploration__item:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.exploration__item {
+    margin-bottom: 240px;
+}
+
+
+/* Personal Projects */
+.projects {
+    margin-bottom: 240px;
+}
+.project__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+
+    margin-bottom: 65px;
+}
+
+.project__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Contacts */
+.contacts {
+    position: relative;
+    margin-bottom: 200px;
+}
+.contact__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.contact__subtitle {
+    max-width: 452px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    /* or 158% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #959595;
+
+    margin: 0 auto;
+    margin-bottom: 46px;
+    width: 100%;
+}
+
+.btn--contact {
+    background-color: rgba(157, 157, 157, 1);
+    border: none;
+
+    font-weight: 100;
+    font-size: 18px;
+
+    color: #FFFFFF;
+
+    padding: 19.5px 101px;
+    cursor: pointer;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.btn--contact:hover {
+    background-color: rgb(119, 116, 116);
+}
+
+
+/* Footer */
+.footer {
+    padding-top: 48px;
+    padding-bottom: 36px;
+    border-top: 1px solid #696969;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height, or 225% */
+
+    letter-spacing: -0.5px;
+
+    color: #959595;
+}
+
+.copyright span {
+    color: #ECECEC;
+}
+
+.icons i {
+    margin-right: 43px;
+
+    cursor: pointer;
+}
+
+.icons i:last-child {
+    margin-right: 0;
+}
+
+.icons i:hover {
+    color: #c2c2c2;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 128px;
+}
+
+
+/* Covibe */
+.covibe {
+    margin-bottom: 290px;
+}
+
+.covibes__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+
+    margin-bottom: 12px;
+}
+
+.covibes__subtitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* or 150% */
+
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+
+    max-width: 344px;
+    margin-bottom: 112px;
+}
+
+.covibe__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.covibe__item {
+    margin-right: 30px;
+}
+
+.covibe__item:last-child {
+    margin-right: 0;
+}
+
+.covibe__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+    margin-bottom: 12px;
+}
+
+.covibe__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+}
+
+
+/* Defining the problem */
+.problem {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 88px;
+}
+
+.problem__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+
+    margin-bottom: 12px;
+}
+
+.problem__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    /* or 169% */
+
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+
+    max-width: 1248px;
+}
+
+
+/* Solutions */
+.solutions {
+    margin-bottom: 216px;
+}
+
+.solution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 275px;
+}
+
+.solution__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+
+    margin-bottom: 12px;
+}
+
+.solution__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    /* or 169% */
+
+    letter-spacing: -0.5px;
+
+    color: #FFFFFF;
+
+    max-width: 612px;
+}
+
+
+/* Conclusion */
+.conclusion {
+    margin-bottom: 244px;
+}
+
+.conclusion__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #DEDEDE;
+
+    opacity: 0.7;
+
+    margin-bottom: 20px;
+}
+
+.conclusion__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    /* or 169% */
+
+    letter-spacing: -0.5px;
+
+    color: #DEDEDE;
+    
+    max-width: 1248px;
+
+    margin-bottom: 128px;
+}
